@@ -1,1 +1,1 @@
-# Croissant++
+# Croissant Programming Language Prototype
