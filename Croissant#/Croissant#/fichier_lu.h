@@ -3,6 +3,8 @@
 #pragma once
 #include <fstream>
 #include "fil.h"
+#include "entier.h"
+#include "booleen.h"
 class fichier_lu
 {
 public:
@@ -11,5 +13,7 @@ public:
 	fil ouvrir(std::string fichier);
 	fil ouvrir(fil fichier);
 	void fermer();
+	fil ligne();
+	booleen fin();
 };
 

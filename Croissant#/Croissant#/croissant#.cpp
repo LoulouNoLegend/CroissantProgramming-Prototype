@@ -34,43 +34,43 @@ caractere entree_caractere()
 	return caractere(_getch());
 }
 
-void si(bool condition, void(*fonction))
+void si(bool condition, void(*fonction()))
 {
 	if (condition) {
-		fonction;
+		fonction();
 	}
 	else{return;}
 }
 
-void si_sinon(bool condition, void(*si), void(*sinon))
+void si_sinon(bool condition, void(*si()), void(*sinon()))
 {
 	{
 		if (condition) {
-			si;
+			si();
 		}
 		else{
-			sinon;
+			sinon();
 		}
 	}
 }
 
-void pour(entier iterateur, entier maximum, entier incrementation, void(*fonction))
+void pour(entier iterateur, entier maximum, entier incrementation, void(*fonction()))
 {
 	for (iterateur; iterateur.valeur < maximum.valeur; iterateur.egal(iterateur.valeur + incrementation.valeur)) {
-		fonction;
+		fonction();
 	}
 }
 
-void pour(entier iterateur, entier maximum, void(*fonction))
+void pour(entier iterateur, entier maximum, void(*fonction()))
 {
 	for (iterateur; iterateur.valeur < maximum.valeur; iterateur.egal(iterateur.valeur + 1)) {
-		fonction;
+		fonction();
 	}
 }
 
-void tantque(bool condition, void(*fonction))
+void tantque(bool condition, void(*fonction()))
 {
-	while (condition) { fonction; }
+	while (condition) { fonction(); }
 }
 
 void utiliser_espacenom_std()

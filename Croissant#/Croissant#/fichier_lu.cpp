@@ -19,3 +19,17 @@ fil fichier_lu::ouvrir(fil fichier)
 }
 
 void fichier_lu::fermer(){ this->fichier.close(); }
+
+fil fichier_lu::ligne()
+{
+	std::string ligne;
+	getline(fichier, ligne);
+	return fil(ligne);
+}
+
+booleen fichier_lu::fin()
+{
+	if (fichier.eof()) return booleen("vrai");
+	else return booleen("faux");
+}
+
