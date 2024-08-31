@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3b50a3e2-43f0-4d62-9e7e-ce6686dfb21f}</ProjectGuid>
+    <ProjectGuid>{71171dd8-0933-45ec-9644-228e7f63ebe3}</ProjectGuid>
     <RootNamespace>Croissant</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -128,25 +128,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="booleen.cpp" />
-    <ClCompile Include="caractere.cpp" />
-    <ClCompile Include="croissant#.cpp" />
-    <ClCompile Include="entier.cpp" />
-    <ClCompile Include="fichier_ecrit.cpp" />
-    <ClCompile Include="fil.cpp" />
-    <ClCompile Include="flottant.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="vide.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="booleen.h" />
     <ClInclude Include="caractere.h" />
     <ClInclude Include="croissant#.h" />
     <ClInclude Include="entier.h" />
     <ClInclude Include="fichier_ecrit.h" />
+    <ClInclude Include="fichier_lu.h" />
     <ClInclude Include="fil.h" />
     <ClInclude Include="flottant.h" />
     <ClInclude Include="vide.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="booleen.cpp" />
+    <ClCompile Include="caractere.cpp" />
+    <ClCompile Include="croissant#.cpp" />
+    <ClCompile Include="entier.cpp" />
+    <ClCompile Include="fichier_ecrit.cpp" />
+    <ClCompile Include="fichier_lu.cpp" />
+    <ClCompile Include="fil.cpp" />
+    <ClCompile Include="flottant.cpp" />
+    <ClCompile Include="plantravail.cpp" />
+    <ClCompile Include="vide.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
